@@ -4,7 +4,8 @@
 </script>
 
 <template>
-<div class="min-h-screen bg-gradient-to-br from-emerald-950 to-indigo-950 text-teal-100 flex flex-col items-center p-4 sm:p-8">
+<div ref="dark" class="">
+<div @click="$refs.dark.classList.toggle('dark');" class="min-h-screen bg-gradient-to-br from-emerald-950 to-indigo-950 text-teal-100 flex flex-col items-center p-4 sm:p-8 dark:bg-red-950 dark:text-red-300">
 
     <h1 class="text-[(60)px] sm:text-4xl font-bold text-center">
       Pozdrav, ja sam <span class="text-cyan-400">Marta Kralj</span>
@@ -36,6 +37,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <style scoped>
